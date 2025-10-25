@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabIoT-FT | Laboratório de IoT e Telecomunicações - Unicamp</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuração do Tailwind para usar a fonte Inter -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              unicamp: {
+                DEFAULT: '#003366', // Um azul profundo, inspirado em cores universitárias
+                light: '#0055a4',
+              }
+            }
+          },
+        },
+      }
+    </script>
+
+    <style>
+      /* Estilo de fallback para a fonte */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+    <!-- ==== Header / Navbar ==== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center p-5 px-6">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-unicamp-light">
+                LabIoT-FT
+            </a>
+            
+            <!-- Links de Navegação -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#sobre" class="text-gray-600 hover:text-unicamp transition-colors duration-200">Sobre</a>
+                <a href="#pesquisa" class="text-gray-600 hover:text-unicamp transition-colors duration-200">Pesquisa</a>
+                <a href="#equipe" class="text-gray-600 hover:text-unicamp transition-colors duration-200">Equipe</a>
+                <a href="#contato" class="text-gray-600 hover:text-unicamp transition-colors duration-200">Contato</a>
+            </div>
+            
+            <!-- Botão Mobile (Placeholder) -->
+            <div class="md:hidden">
+                <button class="text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==== Seção Hero ==== -->
+    <section class="bg-unicamp text-white">
+        <div class="container mx-auto text-center py-24 px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Laboratório de Internet das Coisas e Telecomunicações</h1>
+            <p class="text-xl md:text-2xl text-gray-200">Faculdade de Tecnologia (FT) | UNICAMP Limeira</p>
+            <a href="#pesquisa" role="button" class="mt-8 inline-block bg-white text-unicamp font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105 duration-200">
+                Conheça Nossas Pesquisas
+            </a>
+        </div>
+    </section>
+
+    <!-- ==== Seção Sobre ==== -->
+    <section id="sobre" class="container mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold text-center text-unicamp-light mb-12">Sobre o Laboratório</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-unicamp mb-4">Nossa Missão</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Nossa missão é desenvolver pesquisas de ponta em Internet das Coisas (IoT) e Telecomunicações. Buscamos criar soluções inovadoras que integrem o mundo físico e o digital, desde o design de hardware e sensores até a implementação de redes de comunicação avançadas, formando recursos humanos altamente qualificados.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-unicamp mb-4">Nossa Visão</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Ser um centro de referência nacional e internacional na pesquisa e desenvolvimento de tecnologias IoT e de comunicação. Almejamos impulsionar a inovação através da colaboração com a indústria e outras instituições acadêmicas, contribuindo para a transformação digital da sociedade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Seção Linhas de Pesquisa ==== -->
+    <section id="pesquisa" class="bg-white py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-unicamp-light mb-12">Linhas de Pesquisa</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="border border-gray-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-unicamp mb-3">Internet das Coisas (IoT)</h3>
+                    <p class="text-gray-600">Desenvolvimento de sistemas embarcados, integração de sensores, e aplicações de IoT para cidades inteligentes, indústria 4.0 e monitoramento ambiental, incluindo o uso de RFID.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="border border-gray-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-unicamp mb-3">Redes de Comunicação Avançadas</h3>
+                    <p class="text-gray-600">Pesquisa em redes de comunicação sem fio, redes AdHoc, tolerância a falhas e a aplicação de tecnologias emergentes como 5G e 6G para suportar a conectividade massiva de dispositivos.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="border border-gray-200 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-unicamp mb-3">Modelagem e Simulação</h3>
+                    <p class="text-gray-600">Análise de performance de redes através de simulação de eventos discretos. Modelagem de sistemas complexos de IoT para otimização e previsão de comportamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Seção Equipe ==== -->
+    <section id="equipe" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-unicamp-light mb-12">Nossa Equipe</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Nosso laboratório é liderado por pesquisadores com vasta experiência acadêmica e industrial.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                
+                <!-- Card Professor Edson Ursini -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/150x150/e2e8f0/64748b?text=Prof.+Ursini" 
+                         alt="Foto do Professor Edson Ursini" 
+                         class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-gray-200">
+                    <h3 class="text-2xl font-semibold text-unicamp">Prof. Dr. Edson Luiz Ursini</h3>
+                    <p class="text-unicamp-light font-medium mb-4">Coordenador do Laboratório / Professor Associado</p>
+                    <p class="text-gray-600 text-left mb-6">
+                        Professor Associado da Faculdade de Tecnologia (FT) da Unicamp. Conforme sua pesquisa (confirmado via busca web), suas áreas de interesse incluem sistemas de telecomunicações, simulação de eventos discretos, e redes avançadas como IoT, 5G/6G e Indústria 4.0. É o principal orientador das pesquisas do laboratório.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://portal.dados.unicamp.br/perfil?origem=&docente=298333" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">Portal Unicamp</a>
+                        <a href="https://scholar.google.com.br/citations?user=eSkTGhMAAAAJ" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">Google Scholar</a>
+                    </div>
+                </div>
+
+                <!-- Card Professor Jose Roberto Emiliano Leite -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/150x150/e2e8f0/64748b?text=Prof.+Leite" 
+                         alt="Foto do Professor Jose Roberto Emiliano Leite" 
+                         class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-gray-200">
+                    <h3 class="text-2xl font-semibold text-unicamp">Prof. Dr. Jose Roberto Emiliano Leite</h3>
+                    <p class="text-unicamp-light font-medium mb-4">Pesquisador de Telecomunicações / Pós-Doutorando</p>
+                    <p class="text-gray-600 text-left mb-6">
+                        Engenheiro de Telecomunicações com vasta experiência no CPqD. Atualmente é Professor e Pesquisador de Pós-Doutorado na FT Unicamp (confirmado via busca web). Seu foco de pesquisa é a modelagem e simulação de redes IoT, AdHoc e RFID, segurança de barragens usando IoT e a evolução das redes de telecomunicações.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.researchgate.net/profile/Jose-Roberto-Emiliano-Leite" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">ResearchGate</a>
+                        <a href="https://orcid.org/0000-0001-8368-7386" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">ORCID</a>
+                    </div>
+                </div>
+
+                <!-- Card Dr. Leonardo Grando -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/150x150/e2e8f0/64748b?text=Dr.+Grando" 
+                         alt="Foto do Dr. Leonardo Grando" 
+                         class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-gray-200">
+                    <h3 class="text-2xl font-semibold text-unicamp">Prof. Dr. Leonardo Grando</h3>
+                    <p class="text-unicamp-light font-medium mb-4">Pesquisador Colaborador / Doutor em Tecnologia</p>
+                    <p class="text-gray-600 text-left mb-6">
+                        Doutor em Tecnologia pela FT Unicamp (2025), orientado pelo Prof. Ursini. Sua pesquisa (confirmada via busca web) foca na otimização de consumo de bateria e simulação baseada em agentes para Veículos Aéreos Não Tripulados (UAVs/Drones) aplicados a IoT.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.researchgate.net/profile/Leonardo-Grando" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">ResearchGate</a>
+                        <a href="https://scholar.google.com/citations?user=cXC9OsoAAAAJ" target="_blank" rel="noopener noreferrer" class="text-sm text-unicamp hover:underline">Google Scholar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== Footer ==== -->
+    <footer class="bg-unicamp text-gray-300 py-10">
+        <div class="container mx-auto text-center px-6">
+            <p>&copy; 2025 LabIoT-FT - Laboratório de Internet das Coisas e Telecomunicações.</p>
+            <p>Faculdade de Tecnologia - <a href="https://www.ft.unicamp.br/" target="_blank" rel="noopener noreferrer" class="hover:underline text-white font-medium">Unicamp</a>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
